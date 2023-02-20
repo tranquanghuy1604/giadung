@@ -1,0 +1,33 @@
+@media only screen and (max-width:  1536px){
+    .for-user .menuMobile-icon{
+        display: none;
+    }
+    .btn-menu{
+        display: none;
+    }
+    .sub .all-page > li:hover{
+        background-color: #003f62;
+        cursor: pointer;
+    }
+    .sub .all-page > li:hover > a{
+        color: #db9614 !important;
+    }
+    .sub .sub-menu-left li:hover {
+        background-color: #003f62;
+    }
+    .sub .sub-menu-right li:hover {
+        background-color: #003f62;
+    }
+    .sub-contact .sub-contact-element li:hover{
+        background-color: #003f62;
+    }
+    .sub .for-user .icon-head:hover{
+        background-color: orange;
+        cursor: pointer;
+        border-radius: 9999px;
+        transition: all .3s ease-in 0ms;
+    }
+    .sub .for-user .icon-head:hover a{
+        color: #fff;
+    }
+}

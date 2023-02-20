@@ -1,0 +1,115 @@
+@media only screen and (max-width: 992px){
+    .header{
+      background-color: #03679c;
+      position: fixed;
+    }
+    .all-page .logo{
+        display: none !important;
+    }
+    .sub{
+        display: block;
+    }
+    .sub .all-page{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 28%;
+        height: calc(100vh - 50px);
+        margin-top: 50px;
+        overflow-y: auto;
+        background-color: #03679c;
+        animation: moveRight ease-in .4s ;
+        z-index: 10000;
+    } 
+    .sub .all-page > li:hover{
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .sub .all-page > li:hover > a{
+        color: #fff !important;
+    }
+    .sub .all-page  li{
+        display: block;
+        overflow: hidden; 
+    } 
+    .sub .for-user{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .sub-menu{
+        /* display: block; */
+    }
+    
+    .sub .sub-menu-left {
+        display: block;
+        position: relative;
+
+    }
+    .sub-menu .sub .sub-menu-left li:hover{
+        background-color: transparent;
+        color: #fff;
+    }
+    .sub .sub-menu-left > li{
+        background-color: #03679c;
+        min-width: 290px;
+        display: block;
+    }
+    .sub .sub-menu-left li a{
+        padding-left: 40px;
+    }
+    .sub .sub-menu-right {
+        display: block;
+        position: relative;
+        margin-left: 0;
+    }
+    .sub .sub-menu-right > li{
+        background-color: #03679c;
+        min-width: 290px;    
+        display: block;
+    }
+    .sub .sub-menu-right li a{
+        padding-left: 40px;
+    }
+    .sub-contact .sub-contact-element li{
+        display: block;
+        background-color: #03679c;
+        position: none;
+    }
+    .sub-contact .sub-contact-element{
+        display: block;
+        min-width: 290px;
+    }
+    .sub-contact .sub-contact-element li a{
+        text-align: start;
+        padding-left: 40px;
+    }
+    .sub .for-user li:hover{  
+        cursor: pointer;
+    }
+    .pig-img{
+        height: 300px;
+    }
+    .title-cate{
+        padding: 15px;
+        font-size: 18px;
+    }
+    .btn-menu{
+        display: inline-block;
+        font-size: 20px;
+        color: #fff;
+        padding: 0 20px;
+        cursor: pointer;
+        position: relative;
+    }
+    @keyframes moveRight{
+        0%{
+            transform: translateX(50%);
+            opacity: 0;
+        }100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}

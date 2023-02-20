@@ -1,0 +1,154 @@
+.header{
+    height: auto;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+  }
+  .sub{
+      display: flex;
+      justify-content:space-between;
+      list-style: none;
+  }
+  .sub .all-page li{
+      display: inline-block;
+      font-size: 18px;
+  }
+  
+  .sub .all-page > li:hover{
+      background-color: #003f62;
+      cursor: pointer;
+  }
+  .sub .all-page > li:hover > a{
+      color: #db9614 !important;
+  }
+  .sub .for-user .icon-head{
+      display: inline-block;
+      line-height: 50px;   
+      padding: 0 20px;
+      font-size: 20px;
+      position: relative;
+  }
+  .research{
+      display: none;
+      position: absolute;
+      padding: 2% 2%;
+      right: 50%;
+      transform: translateX(-50%);
+      top: 39px;
+      width: 10px;
+      /* animation: inputSearch 0.5 linear ;
+      transition: width 0.4s ease-in 0ms; */
+  }
+  @keyframes inputSearch {
+      from{
+          width: 10px;
+      }to{
+          width: 400px;
+      }
+  
+  }
+  .focus-research{
+      display: block;
+      position: absolute;
+      width: 400px;
+      padding: 2% 2%;
+      left: -50%;
+      transform: translateX(-30%);
+      top: 39px;
+  }
+  .research input{
+      padding: 5px;
+      border: 1px solid #fff;
+  }
+  .icon-head a{
+      color: #fff;
+  }
+  .btn-menu{
+      font-size: 20px;
+      cursor: pointer;
+  }
+  
+  .sub .sub-menu{
+      position: relative;
+  }
+  .sub .all-page li:hover .sub-menu-right,
+  .sub .all-page li:hover .sub-menu-left{
+     display: block;
+  }
+  .sub-menu .sub-menu-left{
+      display: none;
+      position: absolute;
+      min-width: 170px;
+      opacity: 0.7;
+  }
+  .sub-menu .sub-menu-left li{
+      display: block;
+      background-color: #0d0d0d;
+      font-size: 16px;
+  }
+  .sub-menu .sub-menu-left li a{
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 0 20px;
+      line-height: 50px;
+  }
+  .sub-menu .sub-menu-right{
+      display: none;
+      position: absolute;
+      min-width: 170px;
+      margin-left: 170px;
+      opacity: 0.7;
+  }
+  .sub-menu .sub-menu-right li a{
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 0 20px;
+      line-height: 50px;
+  }
+  .sub-menu .sub-menu-right li{
+      display: block;
+      background-color: #0d0d0d;
+      font-size: 16px;
+  }
+  .sub .all-page > li > a{
+      text-decoration: none;
+      padding: 0 20px;
+      line-height: 50px;
+      color: #fff;
+  }
+  .sub .all-page .sub-contact{
+     position: absolute;
+  }
+  .sub .all-page li:hover .sub-contact-element{
+      display: block;
+   }
+  .sub-contact .sub-contact-element{
+      display: none;
+      min-width: 200px;
+      opacity: 0.7;
+  }
+  .sub-contact .sub-contact-element li{
+      display: block;
+      background-color: #0d0d0d;
+  }
+  .sub-contact .sub-contact-element li a{
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 0 20px;
+      line-height: 50px;
+      text-align: center;
+  }
+  .sub .for-user li {
+      display: inline-block;
+      border-radius: 99999999px;
+  }
+  .sub .for-user  li > a{
+      text-decoration: none;
+      padding: 0 20px;
+      line-height: 50px;
+      color: #fff;
+      font-size: 18px;
+  }

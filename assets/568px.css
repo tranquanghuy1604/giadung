@@ -1,0 +1,50 @@
+@media only screen and (max-width: 568px){
+    .sub .for-user .icon-head{
+        font-size: 17px;
+    }
+   .slider-main{
+    top: 11%;
+    font-size: 14px;
+   }
+   .container-layout{
+    padding: 1% 10%;
+   }
+   .container-heading{
+    font-size: 13px;
+   }
+   .pig-img{
+    height: 250px;
+   }
+   .row-cate::after{
+    content: '';
+    position: absolute;
+    top: -3%;
+   }
+   .item-cate{
+    display: block;
+    margin-top: 10%;
+   }
+   .item-cate:nth-child(1){
+    width: 100% !important;
+   }
+   .item-cate:nth-child(2){
+    width: 100%  !important;
+    margin-left: 0 !important;
+   }
+   .item-cate:before{
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 96%;
+   }
+   .title-cate{
+    font-size: 14px;
+   }
+   .social-nw a{
+    font-size: 14px;
+   }
+   .copyright p{
+    font-size: 8px;
+   }
+   
+}

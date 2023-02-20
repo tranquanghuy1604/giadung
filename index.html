@@ -8,11 +8,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./assets/header.css" />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./assets/slider.css" />
+    <link rel="stylesheet" href="./assets/container.css" />
+    <link rel="stylesheet" href="./assets/footer.css" />
+    <link rel="stylesheet" href="./assets/1536px.css" />
+    <link rel="stylesheet" href="./assets/1024px.css" />
+    <link rel="stylesheet" href="./assets/992px.css" />
+    <link rel="stylesheet" href="./assets/568px.css" />
     <title>Đồ gia dụng</title>
   </head>
   <body>
     <div class="main">
+      <!-- HEADER -->
+
       <div class="header">
         <div class="sub">
           <!-- <div class="log-page">
@@ -82,29 +92,10 @@
           </div>
         </div>
       </div>
-      <script>
-        const iconHead = document.querySelector(".icon-head-search");
-        const researchInput = document.querySelector(".research");
-        console.log(researchInput);
-        iconHead.addEventListener("click", function () {
-          if (researchInput.style.display === "block") {
-            researchInput.style.display = "none";
-          } else {
-            researchInput.style.display = "block";
-          }
-        });
+      <script src="./javascript/navbar.js"></script>
 
-        const btnMenu = document.querySelector(".btn-menu");
-        const navBarMenu = document.querySelector(".all-page");
-        function openNav() {
-          if (navBarMenu.style.display === "block") {
-            navBarMenu.style.display = "none";
-          } else {
-            navBarMenu.style.display = "block";
-          }
-        }
-        btnMenu.addEventListener("click", openNav);
-      </script>
+      <!-- SLIDER -->
+
       <div class="slider">
         <img
           src="https://malloca.com/pictures/catalog/background/bg270708.png"
@@ -119,6 +110,9 @@
           <p>Tinh tế và đẳng cấp đến từng chi tiết!</p>
         </div>
       </div>
+
+      <!-- CONTAINER -->
+
       <div class="container">
         <div class="container-layout">
           <div class="container-heading">
@@ -126,123 +120,13 @@
             <!-- <div class="heading-border"></div> -->
           </div>
           <div class="container-product">
-            <script>
-              let a = [
-                {
-                  imgLeft: "img/bepdientu1.png",
-                  imgRight: "img/mayhut.png",
-                  titleCate1: "Bếp điện từ",
-                  titleCate2: "Máy hút bụi",
-                },
-                {
-                  imgLeft: "img/chaurua1.png",
-                  imgRight: "img/voinuoc1.png",
-                  titleCate1: "Chậu rửa",
-                  titleCate2: "Vòi nước",
-                },
-                {
-                  imgLeft: "img/lonuong1.png",
-                  imgRight: "img/lovisong1.png",
-                  titleCate1: "Lò nướng",
-                  titleCate2: "Lò vi sóng",
-                },
-                {
-                  imgLeft: "img/lohap1.png",
-                  imgRight: "img/maygiatsay1.png",
-                  titleCate1: "Lò hấp",
-                  titleCate2: "Máy sấy - Máy giặt",
-                },
-                {
-                  imgLeft: "img/tulanh.png",
-                  imgRight: "img/maysaychen1.png",
-                  titleCate1: "Tủ lạnh",
-                  titleCate2: "Máy sấy chén",
-                },
-                {
-                  imgLeft: "img/mayruachen.png",
-                  imgRight: "img/tubaoquanruou.png",
-                  titleCate1: "Máy rửa chén",
-                  titleCate2: "Tủ bảo quản rượu",
-                },
-                {
-                  imgLeft: "img/bepgas.png",
-                  imgRight: "img/MCF-LX12.png",
-                  titleCate1: "Bếp gas",
-                  titleCate2: "Máy pha cà phê",
-                },
-                {
-                  imgLeft: "img/thiebilocnuoc.png",
-                  imgRight: "img/dungcunhabep1.png",
-                  titleCate1: "Thiết bị lọc nước",
-                  titleCate2: "Dụng cụ nhà bếp",
-                },
-              ];
-
-              let containerProduct =
-                document.querySelector(".container-product");
-              let itemCate = document.querySelector(".item-cate");
-              let listCate = a.map(function (element, index) {
-                let widthItemCate1;
-                let widthItemCate2;
-                if (index % 2 == 0) {
-                  widthItemCate2 = 60;
-                  widthItemCate1 = 37;
-                } else {
-                  widthItemCate2 = 40;
-                  widthItemCate1 = 57;
-                }
-                return `
-                  <div class="row-cate" dataset={${index}}>
-                    <div class="item-cate" style="width:${widthItemCate2}%" >
-                      <div class="pic-cate" >
-                        <div
-                          class="pig-img"
-                          style="background-image: url('${element.imgLeft}')"
-                        >
-                          <img src="${element.imgLeft}" alt="" />
-                        </div>
-                      </div>
-                      <div class="title-cate">${element.titleCate1}</div>
-                      <a href="#" class="product-cate-link"></a>
-                    </div>
-                    <div class="item-cate" style="width:${widthItemCate1}% ">
-                      <div class="pic-cate" >
-                        <div
-                          class="pig-img"
-                          style="background-image: url('${element.imgRight}')"
-                        >
-                          <img src="${element.imgRight}" alt="" />
-                        </div>
-                      </div>
-                      <div class="title-cate">${element.titleCate2}</div>
-                      <a href="#" class="product-cate-link"></a>
-                    </div>
-                  </div>`;
-              });
-
-              containerProduct.innerHTML = listCate.join("");
-              let rowCate = document.querySelectorAll(".row-cate");
-
-              for (let i = 0; i < rowCate.length; i++) {
-                window.addEventListener("scroll", function () {
-                  const el = rowCate[i];
-                  const rect = el.getBoundingClientRect();
-                  if (rect.y - window.innerHeight < -100) {
-                    el.classList.add("animate");
-                  }
-                  /*
-                  if (interView(rowCate[i])) {
-                    console.log("abc");
-                  } else {
-                    console.log("bcb");
-                  }
-                  */
-                });
-              }
-            </script>
+            <script src="./javascript/listProduct.js"></script>
           </div>
         </div>
       </div>
+
+      <!-- FOOTER -->
+
       <div class="footer">
         <div class="hotline">
           <div class="hotline-address">
@@ -256,70 +140,7 @@
           </div>
         </div>
         <div class="info"></div>
-        <script>
-          let Info = document.querySelector(".info");
-          let info = [
-            {
-              headingInfo: "SHOWROOM TP.HỒ CHÍ MINH",
-              mainAddress: "39 Nguyễn Cơ Thạch, Phường An Lợi Đông, TP.HCM",
-              numberPhone: "(84.28) 7302 1168",
-              numberFax: "(84.28) 3862 5727",
-              email: "showroom-q2@malloca.com",
-            },
-            {
-              headingInfo: "SHOWROOM Hà Nội",
-              mainAddress:
-                "Số 10, Chương Dương Độ, P.Chương Dương, Q.Hoàn Kiếm",
-              numberPhone:
-                "(024) 35376 288 - (024) 35376 419 - (024) 35376 299",
-              numberFax: "(024) 627 51 134",
-              email: "showroom-hn@malloca.com",
-            },
-            {
-              headingInfo: "SHOWROOM Đà Nẵng",
-              mainAddress: "451 Điện Biên Phủ, P Hòa Khê, Q. Thanh Khê",
-              numberPhone: "(0236) 7303 268",
-              numberFax: "023 636 927 67",
-              email: "showroom-dn@malloca.com",
-            },
-          ];
-          let listInfo = info.map((item) => {
-            return `
-              <div class="column-info">
-                <h2>${item.headingInfo}</h2>
-                <div class="info-address">
-                  <div class="row-address">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>${item.mainAddress}</p>
-                  </div>
-                  <div class="row-address">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>${item.numberPhone}</p>
-                  </div>
-                  <div class="row-address">
-                    <i class="fa-solid fa-fax"></i>
-                    <p>${item.numberFax}</p>
-                  </div>
-                  <div class="row-address">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>${item.email}</p>
-                  </div>
-                </div>
-              </div>
-            `;
-          });
-          Info.innerHTML = listInfo.join("");
-          const columnInfo = document.querySelectorAll(".column-info");
-          window.addEventListener("scroll", function () {
-            for (let i = 0; i < columnInfo.length; i++) {
-              const el = columnInfo[i];
-              const rect = el.getBoundingClientRect();
-              if (rect.y - window.innerHeight < -100) {
-                el.classList.add("animateUp");
-              }
-            }
-          });
-        </script>
+        <script src="./javascript/footerAddress.js"></script>
         <div class="social-nw">
           <a class="" href="">
             <i class="fa-brands fa-youtube"></i>

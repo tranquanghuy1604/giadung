@@ -1,0 +1,43 @@
+@media only screen and (max-width: 1024px){
+    .sub .all-page li{
+        font-size: 16px;
+    }
+    .sub-menu-left li{
+        font-size: 14px;
+    }
+    .sub-menu-left li{
+        font-size: 14px;
+    }
+    .sub .all-page > li:hover{
+        background-color: #003f62;
+        cursor: pointer;
+    }
+    .sub .all-page > li:hover > a{
+        color: #db9614 !important;
+    }
+    .sub .sub-menu-left li:hover {
+        background-color: #003f62;
+    }
+    .sub .sub-menu-right li:hover {
+        background-color: #003f62;
+    }
+    .sub-contact .sub-contact-element li:hover{
+        background-color: #003f62;
+    }
+    .container-layout{
+        padding: 0 3%;
+    }
+    .pig-img{
+        height: 360px;
+    }
+    .info{
+       display: none;
+    }
+    .hotline{
+        display: none;
+    }
+    .menuMobile-icon {
+        display: none;
+    }
+   
+}
