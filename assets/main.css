@@ -1,63 +1,15 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-   
-  /* Handle */
-::-webkit-scrollbar-thumb {
-    background: #811b1b; 
-  }
-  
-  /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #0e9954; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .main{
-    font-family: Montserrat,sans-serif;
+  font-family: Montserrat,sans-serif;
 }
-
-@keyframes moveRight{
-    0%{
-        transform: translateX(50%);
-        opacity: 0;
-    }100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes moveLeft{
-    from{
-        opacity: 0;
-        transform: translateX(-50%);
-    }to{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes skyMove{
-    from{
-        opacity: 0;
-        transform: translateY(50%);
-    }to{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-.slide{
-    animation: moveRight 2s ease-in;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 
 
-
-
-
-
+/*# sourceMappingURL=main.css.map */

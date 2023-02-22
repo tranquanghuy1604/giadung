@@ -1,27 +1,27 @@
 @media only screen and (max-width: 1024px){
-    .sub .all-page li{
+    .header__all-page li{
         font-size: 16px;
     }
-    .sub-menu-left li{
+    .header__all-page__sub-menu__left li{
         font-size: 14px;
     }
-    .sub-menu-left li{
+    .header__all-page__sub-menu__left li{
         font-size: 14px;
     }
-    .sub .all-page > li:hover{
+    .header__all-page > li:hover{
         background-color: #003f62;
         cursor: pointer;
     }
-    .sub .all-page > li:hover > a{
+    .header__all-page > li:hover > a{
         color: #db9614 !important;
     }
-    .sub .sub-menu-left li:hover {
+    .header__all-page__sub-menu__left li:hover {
         background-color: #003f62;
     }
-    .sub .sub-menu-right li:hover {
+    .header__all-page__sub-menu__right li:hover {
         background-color: #003f62;
     }
-    .sub-contact .sub-contact-element li:hover{
+    .header__all-page__sub-contact .header__all-page__sub-contact__element li:hover{
         background-color: #003f62;
     }
     .container-layout{

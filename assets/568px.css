@@ -1,11 +1,8 @@
 @media only screen and (max-width: 568px){
-    .sub .for-user .icon-head{
+    .header__for-user .header__for-user__icon-head{
         font-size: 17px;
     }
-   .slider-main{
-    top: 11%;
-    font-size: 14px;
-   }
+   
    .container-layout{
     padding: 1% 10%;
    }

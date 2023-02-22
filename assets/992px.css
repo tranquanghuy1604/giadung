@@ -2,14 +2,12 @@
     .header{
       background-color: #03679c;
       position: fixed;
+      display: block;
     }
-    .all-page .logo{
+    .header__all-page .header__all-page__logo{
         display: none !important;
     }
-    .sub{
-        display: block;
-    }
-    .sub .all-page{
+    .header__all-page{
         position: absolute;
         display: none;
         top: 0;
@@ -22,70 +20,66 @@
         animation: moveRight ease-in .4s ;
         z-index: 10000;
     } 
-    .sub .all-page > li:hover{
+    .header__all-page > li:hover{
         background-color: transparent;
         cursor: pointer;
     }
-    .sub .all-page > li:hover > a{
+    .header__all-page > li:hover > a{
         color: #fff !important;
     }
-    .sub .all-page  li{
+    .header__all-page  li{
         display: block;
         overflow: hidden; 
     } 
-    .sub .for-user{
+    .header__for-user{
         display: flex;
         justify-content: end;
         align-items: center;
     }
-    .sub-menu{
-        /* display: block; */
-    }
-    
-    .sub .sub-menu-left {
+    .header__all-page__sub-menu .header__all-page__sub-menu__left {
         display: block;
         position: relative;
 
     }
-    .sub-menu .sub .sub-menu-left li:hover{
+    .header__all-page__sub-menu .header__all-page__sub-menu__left li:hover{
         background-color: transparent;
         color: #fff;
     }
-    .sub .sub-menu-left > li{
+    .header__all-page__sub-menu .header__all-page__sub-menu__left > li{
         background-color: #03679c;
         min-width: 290px;
         display: block;
     }
-    .sub .sub-menu-left li a{
+    .header__all-page__sub-menu .header__all-page__sub-menu__left > li a{
         padding-left: 40px;
     }
-    .sub .sub-menu-right {
+    .header__all-page__sub-menu .header__all-page__sub-menu__right{
         display: block;
         position: relative;
         margin-left: 0;
     }
-    .sub .sub-menu-right > li{
+    .header__all-page__sub-menu .header__all-page__sub-menu__right > li{
         background-color: #03679c;
         min-width: 290px;    
         display: block;
     }
-    .sub .sub-menu-right li a{
+    .header__all-page__sub-menu .header__all-page__sub-menu__right > li a{
         padding-left: 40px;
     }
-    .sub-contact .sub-contact-element li{
+    .header__all-page__sub-contact .header__all-page__sub-contact__element li{
         display: block;
         background-color: #03679c;
         position: none;
     }
-    .sub-contact .sub-contact-element{
+    .header__all-page__sub-contact .header__all-page__sub-contact__element{
         display: block;
         min-width: 290px;
     }
-    .sub-contact .sub-contact-element li a{
+    .header__all-page__sub-contact .header__all-page__sub-contact__element li a{
         text-align: start;
         padding-left: 40px;
     }
-    .sub .for-user li:hover{  
+    .header__for-user li:hover{  
         cursor: pointer;
     }
     .pig-img{
@@ -95,7 +89,7 @@
         padding: 15px;
         font-size: 18px;
     }
-    .btn-menu{
+    .header__for-user__icon-head__btn-menu{
         display: inline-block;
         font-size: 20px;
         color: #fff;

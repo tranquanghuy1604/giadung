@@ -1,4 +1,4 @@
-let Info = document.querySelector(".info");
+let Info = document.querySelector(".footer__info");
 let info = [
   {
     headingInfo: "SHOWROOM TP.HỒ CHÍ MINH",
@@ -24,22 +24,22 @@ let info = [
 ];
 let listInfo = info.map((item) => {
   return `
-    <div class="column-info">
+    <div class="footer__info__column">
       <h2>${item.headingInfo}</h2>
-      <div class="info-address">
-        <div class="row-address">
+      <div class="footer__info__column__address">
+        <div class="footer__info__column__address__row">
           <i class="fa-solid fa-location-dot"></i>
           <p>${item.mainAddress}</p>
         </div>
-        <div class="row-address">
+        <div class="footer__info__column__address__row">
           <i class="fa-solid fa-phone"></i>
           <p>${item.numberPhone}</p>
         </div>
-        <div class="row-address">
+        <div class="footer__info__column__address__row">
           <i class="fa-solid fa-fax"></i>
           <p>${item.numberFax}</p>
         </div>
-        <div class="row-address">
+        <div class="footer__info__column__address__row">
           <i class="fa-solid fa-envelope"></i>
           <p>${item.email}</p>
         </div>
@@ -48,7 +48,7 @@ let listInfo = info.map((item) => {
   `;
 });
 Info.innerHTML = listInfo.join("");
-const columnInfo = document.querySelectorAll(".column-info");
+const columnInfo = document.querySelectorAll(".footer__info__column");
 window.addEventListener("scroll", function () {
   for (let i = 0; i < columnInfo.length; i++) {
     const el = columnInfo[i];

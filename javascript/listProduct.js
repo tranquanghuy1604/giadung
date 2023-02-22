@@ -49,8 +49,8 @@ let a = [
   },
 ];
 
-let containerProduct = document.querySelector(".container-product");
-let itemCate = document.querySelector(".item-cate");
+let containerProduct = document.querySelector(".container-layout__product");
+let itemCate = document.querySelector(".row-cate__item-cate");
 let listCate = a.map(function (element, index) {
   let widthItemCate1;
   let widthItemCate2;
@@ -63,29 +63,29 @@ let listCate = a.map(function (element, index) {
   }
   return `
       <div class="row-cate" dataset={${index}}>
-        <div class="item-cate" style="width:${widthItemCate2}%" >
-          <div class="pic-cate" >
+        <div class="row-cate__item-cate" style="width:${widthItemCate2}%" >
+          <div class="row-cate__item-cate__pic-cate" >
             <div
-              class="pig-img"
+              class="row-cate__item-cate__pic-cate--pig-img"
               style="background-image: url('${element.imgLeft}')"
             >
               <img src="${element.imgLeft}" alt="" />
             </div>
           </div>
-          <div class="title-cate">${element.titleCate1}</div>
-          <a href="#" class="product-cate-link"></a>
+          <div class="row-cate__item-cate__title-cate">${element.titleCate1}</div>
+          <a href="#" class="row-cate__item-cate__product-cate-link"></a>
         </div>
-        <div class="item-cate" style="width:${widthItemCate1}% ">
-          <div class="pic-cate" >
+        <div class="row-cate__item-cate" style="width:${widthItemCate1}% ">
+          <div class="row-cate__item-cate__pic-cate" >
             <div
-              class="pig-img"
+              class="row-cate__item-cate__pic-cate--pig-img"
               style="background-image: url('${element.imgRight}')"
             >
               <img src="${element.imgRight}" alt="" />
             </div>
           </div>
-          <div class="title-cate">${element.titleCate2}</div>
-          <a href="#" class="product-cate-link"></a>
+          <div class="row-cate__item-cate__title-cate">${element.titleCate2}</div>
+          <a href="#" class="row-cate__item-cate__product-cate-link"></a>
         </div>
       </div>`;
 });
@@ -100,12 +100,5 @@ for (let i = 0; i < rowCate.length; i++) {
     if (rect.y - window.innerHeight < -100) {
       el.classList.add("animate");
     }
-    /*
-      if (interView(rowCate[i])) {
-        console.log("abc");
-      } else {
-        console.log("bcb");
-      }
-      */
   });
 }

@@ -83,3 +83,12 @@
 .copyright a:hover{
     color: #db9614;
 }
+@keyframes skyMove{
+    from{
+        opacity: 0;
+        transform: translateY(50%);
+    }to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
