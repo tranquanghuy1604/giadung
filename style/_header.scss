@@ -145,6 +145,7 @@
   .header {
     &__all-page {
       & > li:hover {
+        transition: all 0.3s linear 0ms;
         background-color: #003f62;
         cursor: pointer;
         & > a {
@@ -154,11 +155,13 @@
       &__sub-menu {
         &__left {
           & li:hover {
+            transition: all 0.3s linear 0ms;
             background-color: #003f62;
           }
         }
         &__right {
           & li:hover {
+            transition: all 0.3s linear 0ms;
             background-color: #003f62;
           }
         }
@@ -167,6 +170,7 @@
         .header__all-page__sub-contact {
           &__element {
             li:hover {
+              transition: all 0.3s linear 0ms;
               background-color: #003f62;
             }
           }
@@ -201,6 +205,7 @@
             font-size: 14px;
           }
           li:hover {
+            transition: all 0.3s linear 0ms;
             background-color: #003f62;
           }
         }
@@ -209,15 +214,18 @@
             font-size: 14px;
           }
           li:hover {
+            transition: all 0.3s linear 0ms;
             background-color: #003f62;
           }
         }
       }
       & li:hover {
+        transition: all 0.3s linear 0ms;
         background-color: #003f62;
         cursor: pointer;
       }
       & > li:hover {
+        transition: all 0.3s linear 0ms;
         & > a {
           color: #db9614 !important;
         }
@@ -226,6 +234,7 @@
         .header__all-page__sub-contact {
           &__element {
             li:hover {
+              transition: all 0.3s linear 0ms;
               background-color: #003f62;
             }
           }

@@ -1,6 +1,6 @@
 .slider {
   position: relative;
-  ::before {
+  &:before {
     content: "";
     background: linear-gradient(
       to bottom,

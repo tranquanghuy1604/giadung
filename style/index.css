@@ -133,6 +133,7 @@
 
 @media only screen and (max-width: 1536px) {
   .header__all-page > li:hover {
+    transition: all 0.3s linear 0ms;
     background-color: #003f62;
     cursor: pointer;
   }
@@ -140,12 +141,15 @@
     color: #db9614 !important;
   }
   .header__all-page__sub-menu__left li:hover {
+    transition: all 0.3s linear 0ms;
     background-color: #003f62;
   }
   .header__all-page__sub-menu__right li:hover {
+    transition: all 0.3s linear 0ms;
     background-color: #003f62;
   }
   .header__all-page > li .header__all-page__sub-contact__element li:hover {
+    transition: all 0.3s linear 0ms;
     background-color: #003f62;
   }
   .header__for-user__icon-head__btn-menu {
@@ -169,22 +173,29 @@
     font-size: 14px;
   }
   .header__all-page__sub-menu__left li:hover {
+    transition: all 0.3s linear 0ms;
     background-color: #003f62;
   }
   .header__all-page__sub-menu__right li {
     font-size: 14px;
   }
   .header__all-page__sub-menu__right li:hover {
+    transition: all 0.3s linear 0ms;
     background-color: #003f62;
   }
   .header__all-page li:hover {
+    transition: all 0.3s linear 0ms;
     background-color: #003f62;
     cursor: pointer;
+  }
+  .header__all-page > li:hover {
+    transition: all 0.3s linear 0ms;
   }
   .header__all-page > li:hover > a {
     color: #db9614 !important;
   }
   .header__all-page > li .header__all-page__sub-contact__element li:hover {
+    transition: all 0.3s linear 0ms;
     background-color: #003f62;
   }
   .header__for-user__icon-head__btn-menu {
@@ -357,7 +368,7 @@
 .slider {
   position: relative;
 }
-.slider ::before {
+.slider:before {
   content: "";
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 100%);
   position: absolute;
