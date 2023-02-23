@@ -409,3 +409,10 @@
 .slide {
   animation: moveRight 2s ease-in;
 }
+@media only screen and (max-width: 568px) {
+  .header {
+    &__all-page {
+      min-width: 210px;
+    }
+  }
+}
