@@ -12,7 +12,6 @@
   font-size: 18px;
 }
 .header__all-page > li:hover {
-  background-color: #003f62;
   cursor: pointer;
 }
 .header__all-page > li:hover .header__all-page__sub-menu__right, .header__all-page > li:hover .header__all-page__sub-menu__left {
@@ -131,37 +130,37 @@
   color: #fff;
   font-size: 18px;
 }
+
 @media only screen and (max-width: 1536px) {
-  .header .header__all-page > li:hover {
+  .header__all-page > li:hover {
     background-color: #003f62;
     cursor: pointer;
   }
-  .header .header__all-page > li:hover > a {
+  .header__all-page > li:hover > a {
     color: #db9614 !important;
   }
-  .header .header__all-page__sub-menu__left li:hover {
+  .header__all-page__sub-menu__left li:hover {
     background-color: #003f62;
   }
-  .header .header__all-page__sub-menu__right li:hover {
+  .header__all-page__sub-menu__right li:hover {
     background-color: #003f62;
   }
-  .header .header__all-page > li .header__all-page__sub-contact__element li:hover {
+  .header__all-page > li .header__all-page__sub-contact__element li:hover {
     background-color: #003f62;
   }
-  .header .header__for-user__icon-head__btn-menu {
+  .header__for-user__icon-head__btn-menu {
     display: none;
   }
-  .header .header__for-user__icon-head:hover {
+  .header__for-user__icon-head:hover {
     background-color: orange;
     cursor: pointer;
     border-radius: 9999px;
     transition: all 0.3s ease-in 0ms;
   }
-  .header .header__for-user__icon-head:hover a {
+  .header__for-user__icon-head:hover a {
     color: #fff;
   }
 }
-
 @media only screen and (max-width: 1024px) {
   .header__all-page li {
     font-size: 16px;
@@ -229,10 +228,6 @@
     display: block;
     position: relative;
   }
-  .header__all-page__sub-menu__left li:hover {
-    background-color: transparent;
-    color: #fff;
-  }
   .header__all-page__sub-menu__left > li {
     background-color: #03679c;
     min-width: 290px;
@@ -246,12 +241,12 @@
     position: relative;
     margin-left: 0;
   }
-  .header__all-page__sub-menu > li {
+  .header__all-page__sub-menu__right > li {
     background-color: #03679c;
     min-width: 290px;
     display: block;
   }
-  .header__all-page__sub-menu > li a {
+  .header__all-page__sub-menu__right > li a {
     padding-left: 40px;
   }
   .header__all-page > li .header__all-page__sub-contact__element {
