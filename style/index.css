@@ -130,7 +130,6 @@
   color: #fff;
   font-size: 18px;
 }
-
 @media only screen and (max-width: 1536px) {
   .header__all-page > li:hover {
     transition: all 0.3s linear 0ms;
@@ -289,82 +288,32 @@
     cursor: pointer;
     position: relative;
   }
-  .pig-img {
-    height: 300px;
+}
+@keyframes moveRight {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
   }
-  .title-cate {
-    padding: 15px;
-    font-size: 18px;
-  }
-  @keyframes moveRight {
-    0% {
-      transform: translateX(50%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 @media only screen and (max-width: 568px) {
   .header__for-user__icon-head {
     font-size: 17px;
   }
-  .slider-main {
-    top: 11%;
-    font-size: 14px;
-  }
-  .container-layout {
-    padding: 1% 10%;
-  }
-  .container-heading {
-    font-size: 13px;
-  }
-  .pig-img {
-    height: 250px;
-  }
-  .row-cate::after {
-    content: "";
-    position: absolute;
-    top: -3%;
-  }
-  .item-cate {
-    display: block;
-    margin-top: 10%;
-  }
-  .item-cate:nth-child(1) {
-    width: 100% !important;
-  }
-  .item-cate:nth-child(2) {
-    width: 100% !important;
-    margin-left: 0 !important;
-  }
-  .item-cate:before {
-    content: "";
-    position: absolute;
-    width: 95%;
-    height: 96%;
-  }
-  .title-cate {
-    font-size: 14px;
-  }
-  .social-nw a {
-    font-size: 14px;
-  }
-  .copyright p {
-    font-size: 8px;
-  }
 }
-.slide {
-  animation: moveRight 2s ease-in;
-}
-
 @media only screen and (max-width: 568px) {
   .header__all-page {
     min-width: 210px;
   }
 }
+
+.slide {
+  animation: moveRight 2s ease-in;
+}
+
 .slider {
   position: relative;
 }
@@ -405,7 +354,6 @@
 .slider__main p {
   font-style: italic;
 }
-
 @media only screen and (max-width: 568px) {
   .slider__main {
     top: 15%;
@@ -418,6 +366,7 @@
     font-size: 18px;
   }
 }
+
 .container-layout {
   max-width: 1200px;
   margin: auto;
@@ -526,37 +475,6 @@
 .container-layout__product .row-cate__item-cate:hover .row-cate__item-cate__title-cate {
   background-color: #003f62;
 }
-
-.animate .row-cate__item-cate:nth-child(1) {
-  animation: moveLeft 0.7s ease-in;
-  transition: all 0.7s ease-in 0ms;
-}
-.animate .row-cate__item-cate:nth-child(2) {
-  animation: moveRight 0.7s ease-in;
-  transition: all 0.7s ease-in 0ms;
-  margin-left: 2%;
-}
-
-@keyframes moveRight {
-  0% {
-    transform: translateX(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes moveLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 @media only screen and (max-width: 1024px) {
   .container-layout {
     padding: 0 3%;
@@ -618,6 +536,37 @@
   }
   .container-layout__product .row-cate__item-cate__pic-cate {
     height: 250px;
+  }
+}
+
+.animate .row-cate__item-cate:nth-child(1) {
+  animation: moveLeft 0.7s ease-in;
+  transition: all 0.7s ease-in 0ms;
+}
+.animate .row-cate__item-cate:nth-child(2) {
+  animation: moveRight 0.7s ease-in;
+  transition: all 0.7s ease-in 0ms;
+  margin-left: 2%;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 .footer {
@@ -700,20 +649,9 @@
 .footer__copyright a:hover {
   color: #db9614;
 }
-
-.animateUp {
-  animation: skyMove 0.4s linear;
-  transition: all 0.5s ease-in 0ms;
-}
-
-@keyframes skyMove {
-  from {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+@media only screen and (max-width: 992px) {
+  .footer__info {
+    display: none;
   }
 }
 @media only screen and (max-width: 568px) {
@@ -751,6 +689,22 @@
   }
   .footer__copyright p {
     font-size: 9px;
+  }
+}
+
+.animateUp {
+  animation: skyMove 0.4s linear;
+  transition: all 0.5s ease-in 0ms;
+}
+
+@keyframes skyMove {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 * {

@@ -140,9 +140,7 @@
       font-size: 18px;
     }
   }
-}
-@media only screen and (max-width: 1536px) {
-  .header {
+  @media only screen and (max-width: 1536px) {
     &__all-page {
       & > li:hover {
         transition: all 0.3s linear 0ms;
@@ -192,9 +190,7 @@
       }
     }
   }
-}
-@media only screen and (max-width: 1024px) {
-  .header {
+  @media only screen and (max-width: 1024px) {
     &__all-page {
       li {
         font-size: 16px;
@@ -247,9 +243,7 @@
       }
     }
   }
-}
-@media only screen and (max-width: 992px) {
-  .header {
+  @media only screen and (max-width: 992px) {
     background-color: #03679c;
     position: fixed;
     display: block;
@@ -343,14 +337,6 @@
       }
     }
   }
-
-  .pig-img {
-    height: 300px;
-  }
-  .title-cate {
-    padding: 15px;
-    font-size: 18px;
-  }
   @keyframes moveRight {
     0% {
       transform: translateX(50%);
@@ -361,67 +347,19 @@
       opacity: 1;
     }
   }
-}
-@media only screen and (max-width: 568px) {
-  .header {
+  @media only screen and (max-width: 568px) {
     &__for-user {
       &__icon-head {
         font-size: 17px;
       }
     }
   }
-  .slider-main {
-    top: 11%;
-    font-size: 14px;
-  }
-  .container-layout {
-    padding: 1% 10%;
-  }
-  .container-heading {
-    font-size: 13px;
-  }
-  .pig-img {
-    height: 250px;
-  }
-  .row-cate::after {
-    content: "";
-    position: absolute;
-    top: -3%;
-  }
-  .item-cate {
-    display: block;
-    margin-top: 10%;
-  }
-  .item-cate:nth-child(1) {
-    width: 100% !important;
-  }
-  .item-cate:nth-child(2) {
-    width: 100% !important;
-    margin-left: 0 !important;
-  }
-  .item-cate:before {
-    content: "";
-    position: absolute;
-    width: 95%;
-    height: 96%;
-  }
-  .title-cate {
-    font-size: 14px;
-  }
-  .social-nw a {
-    font-size: 14px;
-  }
-  .copyright p {
-    font-size: 8px;
-  }
-}
-.slide {
-  animation: moveRight 2s ease-in;
-}
-@media only screen and (max-width: 568px) {
-  .header {
+  @media only screen and (max-width: 568px) {
     &__all-page {
       min-width: 210px;
     }
   }
+}
+.slide {
+  animation: moveRight 2s ease-in;
 }
